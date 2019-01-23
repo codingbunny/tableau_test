@@ -1,0 +1,857 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook original-version='18.1' source-build='2018.3.2 (20183.18.1219.1533)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='py_raw_data_v7 (xueersi.py_raw_data_v7) (xueersi)' inline='true' name='federated.1aojpcf05u4gvt178t2fe0azhpxb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='janchor-dw-awsnx.czdfhdeyicbt.cn-northwest-1.redshift.amazonaws.com.cn' name='redshift.1y1akgc0bd4bz11ejojsl170f30f'>
+            <connection class='redshift' dbname='dataone' odbc-connect-string-extras='' one-time-sql='' port='5439' schema='xueersi' server='janchor-dw-awsnx.czdfhdeyicbt.cn-northwest-1.redshift.amazonaws.com.cn' single-node='no' sslmode='' username='dataonereader' />
+          </named-connection>
+        </named-connections>
+        <relation connection='redshift.1y1akgc0bd4bz11ejojsl170f30f' name='py_raw_data_v7' table='[xueersi].[py_raw_data_v7]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>course_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[course_id]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>course_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snapshot_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[snapshot_time]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>snapshot_time</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teacher_ids</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[teacher_ids]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>teacher_ids</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[grade_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>grade_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>64</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>level_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[level_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>level_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>32</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>type_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>32</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>32</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>32</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>term</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[term]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>term</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>32</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teacher_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[teacher_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>teacher_name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>surplus_persons</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[surplus_persons]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>surplus_persons</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>regist_persons</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[regist_persons]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>regist_persons</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin_regist_persons</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[origin_regist_persons]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>origin_regist_persons</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_persons</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[max_persons]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>max_persons</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gmv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gmv]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>gmv</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_gmv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[max_gmv]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>max_gmv</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teaching_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[teaching_hours]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>teaching_hours</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>single_class_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[single_class_hour]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>single_class_hour</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>session_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[session_time]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>session_time</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>64</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>session_number</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[session_number]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>session_number</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_session</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_session]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>total_session</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[venue_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>venue_name</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>classroom_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[classroom_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>classroom_name</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[area_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>area_name</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>128</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dt</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dt]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>dt</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin_venue_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[origin_venue_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>origin_venue_name</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ed_venue_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ed_venue_name]</local-name>
+            <parent-name>[py_raw_data_v7]</parent-name>
+            <remote-alias>ed_venue_name</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='course_num' datatype='integer' name='[Calculation_748301244875190272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([course_id])' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Area Name' datatype='string' name='[area_name]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Classroom Name' datatype='string' name='[classroom_name]' role='dimension' type='nominal' />
+      <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+      <column caption='Dt' datatype='date' name='[dt]' role='dimension' type='ordinal' />
+      <column caption='Ed Venue Name' datatype='string' name='[ed_venue_name]' role='dimension' type='nominal' />
+      <column caption='End Date' datatype='date' name='[end_date]' role='dimension' type='ordinal' />
+      <column caption='Gmv' datatype='real' name='[gmv]' role='measure' type='quantitative' />
+      <column caption='Grade Name' datatype='string' name='[grade_name]' role='dimension' type='nominal' />
+      <column caption='Level Name' datatype='string' name='[level_name]' role='dimension' type='nominal' />
+      <column caption='Max Gmv' datatype='real' name='[max_gmv]' role='measure' type='quantitative' />
+      <column caption='Max Persons' datatype='integer' name='[max_persons]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Origin Regist Persons' datatype='integer' name='[origin_regist_persons]' role='measure' type='quantitative' />
+      <column caption='Origin Venue Name' datatype='string' name='[origin_venue_name]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Regist Persons' datatype='integer' name='[regist_persons]' role='measure' type='quantitative' />
+      <column caption='Session Number' datatype='integer' name='[session_number]' role='dimension' type='ordinal' />
+      <column caption='Session Time' datatype='string' name='[session_time]' role='dimension' type='nominal' />
+      <column caption='Single Class Hour' datatype='real' name='[single_class_hour]' role='measure' type='quantitative' />
+      <column caption='Snapshot Time' datatype='datetime' name='[snapshot_time]' role='dimension' type='ordinal' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+      <column caption='Surplus Persons' datatype='integer' name='[surplus_persons]' role='measure' type='quantitative' />
+      <column caption='Teacher Ids' datatype='string' name='[teacher_ids]' role='dimension' type='nominal' />
+      <column caption='Teacher Name' datatype='string' name='[teacher_name]' role='dimension' type='nominal' />
+      <column caption='Teaching Hours' datatype='real' name='[teaching_hours]' role='measure' type='quantitative' />
+      <column caption='Term' datatype='string' name='[term]' role='dimension' type='nominal' />
+      <column caption='Total Session' datatype='integer' name='[total_session]' role='measure' type='quantitative' />
+      <column caption='Type Name' datatype='string' name='[type_name]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Venue Name' datatype='string' name='[venue_name]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.0488323' measure-ordering='alphabetic' measure-percentage='0.951168' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='py_raw_data_v7 (xueersi.py_raw_data_v7) (xueersi)' name='federated.1aojpcf05u4gvt178t2fe0azhpxb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aojpcf05u4gvt178t2fe0azhpxb'>
+            <column caption='course_num' datatype='integer' name='[Calculation_748301244875190272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([course_id])' />
+            </column>
+            <column caption='Course Id' datatype='string' name='[course_id]' role='dimension' type='nominal' />
+            <column caption='Dt' datatype='date' name='[dt]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_748301244875190272]' derivation='User' name='[usr:Calculation_748301244875190272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dt]' derivation='Year' name='[yr:dt:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1aojpcf05u4gvt178t2fe0azhpxb].[usr:Calculation_748301244875190272:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1aojpcf05u4gvt178t2fe0azhpxb].[yr:dt:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1aojpcf05u4gvt178t2fe0azhpxb].[none:course_id:nk]</field>
+            <field>[federated.1aojpcf05u4gvt178t2fe0azhpxb].[yr:dt:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C9B8BD74-4B11-4648-B2DF-04E06F2EFE6E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='128' name='Sheet 1' width='248'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
